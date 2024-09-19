@@ -1,4 +1,5 @@
 const { Sequelize } = require('sequelize');
+//const user = require('./Models/user.js');
 
 const sequelize = new Sequelize('testnode', 'postgres', 'root', {
     host:'localhost',
@@ -11,3 +12,5 @@ sequelize.authenticate().then(() => {
 }).catch((error) => {
     console.error('Connexion KO', error);
 });
+
+//user.test();
